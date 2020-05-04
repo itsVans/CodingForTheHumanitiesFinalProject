@@ -1,0 +1,354 @@
+/** {
+	margin: 0px;
+}*/
+
+
+body {
+	margin: 0;
+	font-family: sans-serif;
+	background: rgba(0,0,0);
+}
+
+.fix {
+	clear: both;
+	overflow: hidden;
+}
+
+header {
+	overflow: hidden;
+	height: 100vh;
+}
+
+.videoBG {
+	position: absolute;
+	right: 0;
+	min-width: 100%;
+	min-height: 100%;
+}
+
+.nav-area {
+	background: rgb(0,0,0);
+	height: 60px;
+	position: fixed;
+	width: 100%;
+	z-index: 99;
+	border-bottom: 2px solid white;
+}
+
+.menu-area {
+	float: right;
+	list-style: none;
+	margin: 20px;
+}
+
+.menu-area li {
+	display: inline-block;
+	margin: 0 5px;
+}
+
+.menu-area li a {
+	text-decoration: none;
+	color: white;
+	padding: 5px 10px;
+	letter-spacing: 2px;
+}
+
+.menu-area li.active a {
+	color: #ffffff;
+}
+
+.menu-area li a:hover {
+	border-bottom: 2px solid white;
+	text-underline-position: under;
+	transition: .25s
+}
+
+.banner-text {
+	position: absolute;
+	text-align: center;
+	height: 400px;
+	width: 700px;
+	top: 65%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.banner-text h1 {
+	position: relative;
+	color: #fff;
+	font-size: 120px;
+	animation : type 3s steps(10);
+	/*animation : blinker 0.6s linear infinite;*/
+	animation-timing-function: linear;
+	/*animation-iteration-count: infinite;*/
+	overflow : hidden;
+	white-space : nowrap;
+	font-family : consolas;
+	border-right : 4px solid white;
+	width : 10ch;
+	margin-top: 0px;
+	margin-bottom: 0px
+}
+
+/* .blink {
+      animation: blinker 0.6s linear infinite;
+ }*/
+
+.banner-text p {
+	color: #fff;
+	font-size: 24px;
+	margin: 0px;
+}
+
+.btn {
+	display: inline-block;
+	margin-top: 5%;
+	background: transparent;
+	border: 0;
+	font-size: 20px;
+	text-transform: uppercase;
+	border: 3px solid #fff;
+	padding: 10px 25px;
+	color: #fff;
+	border-radius: 25px;
+}
+
+button:hover {
+	background: white;
+	color: black;
+	transition: 0.5s;
+
+}
+
+@keyframes blinker {  
+      50% { 
+      	opacity: 0; 
+      }
+      0% {
+      	opacity: 1;
+      }
+      100% {
+      	opacity: 0;
+      }
+}
+    
+
+@keyframes type {
+	0% {
+		width:  0ch;
+	}
+	100% {
+		width: 10ch;
+	}
+}
+
+.map {
+	height: 300px;
+}
+
+.container {
+	text-align: center;
+	display: grid;
+	grid-template-columns: 50% 50%;
+	grid-column-start: 1;
+	grid-column-end: 3;
+	grid-template-rows: 500px 500px 500px 500px 500px;
+
+}
+
+
+.Site_1 {
+	grid-column-start: 1;
+	grid-column-end: 2;
+	background-image: url(StatueBackground.jpg);
+	background-size: 250%;
+/*	opacity: 0.5;*/
+	object-fit: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-position-y: 25%;
+	background-position-x: 56%;
+}
+
+.content_text {
+	color: white;
+	border: 2px solid white;
+	padding: 10px;
+	margin: 10px;
+	background: rgba(105, 105, 105, 0.5);
+	display: inline-block;
+}
+
+.Site_2 {
+	grid-column-start: 2;
+	grid-column-end: 3;
+}
+
+.Site_3 {
+	grid-column-start: 1;
+	grid-column-end: 2;
+}
+
+.Site_4 {
+	grid-column-start: 2;
+	grid-column-end: 3;
+	background-image: url(MSG.jpg);
+	background-size: 150%;
+/*	opacity: 0.5;*/
+	background-repeat: no-repeat;
+	background-position: center;
+	background-position-y: 25%;
+	background-position-x: 56% 
+}
+
+.Site_5 {
+	grid-column-start: 1;
+	grid-column-end: 2;
+	background-image: url(Broadway.jpg);
+/*	opacity: 0.5;*/
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-position-y: 50%;
+	background-position-x: 56% 
+}
+
+.Site_6 {
+	grid-column-start: 2;
+	grid-column-end: 3;
+}
+
+.Site_7 {
+	grid-column-start: 2;
+	grid-column-end: 3;
+/*	opacity: 0.5;*/
+	background-image: url(Garden.jpg);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-position-y: 50%;
+	background-position-x: 56% 
+}
+
+.Site_8 {
+	grid-column-start: 1;
+	grid-column-end: 2;
+}
+
+.Site_9 {
+	grid-column-start: 1;
+	grid-column-end: 2;
+	background-image: url(EmpireBuilding.jpg);
+	background-size: 125%;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-position-y: 50%;
+	background-position-x: 56%
+}
+
+.Site_10 {
+	grid-column-start: 2;
+	grid-column-end: 3;
+}
+.Welcome {
+	text-align: center;
+/*	padding-top: 30px;
+	padding-bottom: 30px;*/
+	height: 300px;
+	width: 100%;
+	display: inline-block;
+	border-bottom: 1px solid black;
+	border-top: 1px solid black;
+	background: white;
+}
+
+.Welcome h1 {
+	/*padding-bottom: 20px;*/
+	font-size: 64px;
+	color: black;
+}
+
+.Welcome p {
+	font-size: 24px;
+}
+
+.Example {
+	text-align: center;
+/*	padding-top: 30px;
+	padding-bottom: 30px;*/
+	height: 150px;
+	width: 100%;
+	display: inline-block;
+	border-bottom: 1px solid black;
+	border-top: 1px solid black;
+}
+
+.Example h1 {
+	font-size: 64px;
+	color: white;
+}
+
+.listings h1 {
+	height: 150px;
+	width: 100%;
+	text-align: center;
+	color: black;
+	background: white;
+	font-size: 64px;
+	padding-top: 50px;
+	margin:0px;
+}
+
+/*Resize the wrap to see the search bar change!*/
+.wrap {
+	width: 35%;
+	margin: auto;
+}
+
+.search {
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+
+.searchTerm {
+  width: 100%;
+  border: 3px solid rgb(128,0,0);
+  border-right: none;
+  padding: 5px;
+  height: 34px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: white;
+  font-size: 32px;
+  margin-bottom: 42px;
+  background-color: white;
+}
+
+.searchTerm:focus{
+  color: maroon;
+}
+
+.searchButton {
+  width: 40px;
+  height: 50px;
+  border: 3px solid maroon;
+  background: maroon;
+  text-align: center;
+  color: white;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.searchButton:hover {
+	background-color: maroon;
+	color: white;
+}
+
+.Footer {
+	height: 50px;
+	color: white;
+	text-align: center;
+	margin: auto;
+}
