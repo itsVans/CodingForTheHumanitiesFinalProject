@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tourism.io</title>
+  <link rel="stylesheet" type="text/css" href="tourism.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css" integrity="sha512-M2wvCLH6DSRazYeZRIm1JnYyh22purTM+FDB5CsyxtQJYeKq83arPe5wgbNmcFXGqiSH2XR8dT/fJISVA1r/zQ=="
+   crossorigin=""/>
+  <link rel="stylesheet" href="leaflet.css" />
+</head>
+<body>
+  
+  <div>
+  <header class="fix">
+    <video src="NYC Footage.mp4" height="754" class="videoBG" autoplay loop muted></video>
+        <div class="nav-area">
+          <ul class="menu-area">
+              <li class="active"><a href="prologue.html">Translator</a></li>
+              <li class="active"><a href="leaflet.html">Leaflet Map</a></li>
+              <li class="active"><a href="#">About</a></li>
+          </ul>
+        </div>
+
+    <div class="banner-text">
+      <h1>Tourism.io</h1>
+      <p>Your #1 local tourist sites guide near you!</p>
+      <button class="btn">Get Started</button>
+    </div>
+  </header>
+  </div>
+
+    <div class="Welcome">
+      <h1>Welcome To Tourism.io</h1>
+        <p>Tourism.io is your #1 choice when it comes to looking for the best tourist sites that your state (or the state that you are visiting) has to over. Here, you have access to tens of thousands of different tourist locations, landmarks, historical points, and more all accessed through on use of the provided search bar below. You will have access to detailed descriptions of each site along with previous tourists reviews aiding you in your choice of where to spend your time. Hopefully, our application assists you in picking out the best tourist attractions to visit for you, your family, and your friends!</p>
+    </div>
+    
+    <div class="Example">
+      <h1>Enter State in the Search Bar Below</h1>
+        <div class="wrap">
+          <div class="search">
+            <input type="text" class="searchTerm" placeholder="New York">
+              <button type="submit" class="searchButton">
+                <i class="fa fa-search"></i>
+              </button>
+          </div>
+        </div>
+    </div>
+   
+    <div class="listings">
+      <h1>Here are the Top 5 listings for: New York</h1>
+    </div>
+
+  <div class="container">
+    
+
+    <div class="Site_1">
+        <div class="content_text">
+          <h1>Statue Of Liberty</h1>
+          <h4>Coordinates: 40.68919682,-74.04452562</h4>
+          <h4>Tourist Rating: 4.3/5</h4>
+
+          <p>The Statue of Liberty is a colossal neoclassical sculpture on Liberty Island in New York Harbor in New York, in the United States. The copper statue, a gift from the people of France to the people of the United States, was designed by French sculptor Frédéric Auguste Bartholdi and its metal framework was built by Gustave Eiffel. The statue was dedicated on October 28, 1886. The statue is a figure of Libertas, a robed Roman liberty goddess. She holds a torch above her head with her right hand, and in her left hand carries a tabula ansata inscribed JULY IV MDCCLXXVI, the date of the U.S. Declaration of Independence. A broken shackle and chain lie at her feet as she walks forward, commemorating the recent national abolition of slavery. After its dedication, the statue became an icon of freedom and of the United States, seen as a symbol of welcome to immigrants arriving by sea. Bartholdi was inspired by a French law professor and politician, Édouard René de Laboulaye, who is said to have commented in 1865 that any monument raised to U.S. independence would properly be a joint project of the French and U.S. peoples.</p>
+        </div>
+      
+    </div>
+
+    <div class="Site_2" id="first-map" class="map"></div>
+
+    <div class="Site_3" id="second-map" class="map"></div>
+    <div class="Site_4">
+      
+      <div class="content_text">
+          <h1>Madison Square Garden</h1>
+          <h4>Coordinates: 40.74172961, -73.98828506 </h4>
+          <h4>Tourist Rating: 5/5</h4>
+
+          <p>Madison Square Garden, colloquially known as The Garden or in initials as MSG, is a multi-purpose indoor arena in New York City. Located in Midtown Manhattan between 7th and 8th Avenues from 31st to 33rd Streets, it is situated atop Pennsylvania Station. It is the fourth venue to bear the name "Madison Square Garden"; the first two (1879 and 1890) were located on Madison Square, on East 26th Street and Madison Avenue, with the third Madison Square Garden (1925) further uptown at Eighth Avenue and 50th Street. Since it first opened its doors in 1879, Madison Square Garden has been a celebrated center of New York life. Named “Coolest Arena” in the United States by Rolling Stone and “Venue of the Decade” by Billboard, Madison Square Garden has come to epitomize live sports and entertainment to people around the world, with an appearance at The World’s Most Famous Arena often representing a pinnacle of an athlete’s or performer’s career.
+
+          As the home of the New York Knicks, Rangers, professional boxing, college basketball and so much more, the Garden’s most memorable sports events include the 1970 Knicks NBA Championship, the Rangers 1994 Stanley Cup Championship and “The Fight of the Century” between Muhammad Ali and Joe Frazier in 1971.</p>  
+
+      </div>
+
+  </div>
+    
+    <div class="Site_5">
+
+
+      <div class="content_text">
+          <h1>Broadway Theatre</h1>
+          <h4>Coordinates: 40.764141, -73.98505032 </h4>
+          <h4>Tourist Rating: 4.6/5</h4>
+
+          <p>"The Broadway Theatre (formerly Universal's Colony Theatre, B.S. Moss' Broadway Theatre, Earl Carroll's Broadway Theatre, and Ciné Roma) is a Broadway theatre located in midtown Manhattan. It has a large seating capacity of 1,761, and unlike most Broadway theaters, it is actually located on Broadway, at number 1681.
+
+          Designed by architect Eugene De Rosa for Benjamin S. Moss, it opened as B.S. Moss's Colony Theatre on Christmas Day, 1924, as a venue for vaudeville shows and motion pictures. The theater has operated under many names and owners. It was renamed Universal's Colony Theatre, B.S. Moss' Broadway Theatre, and Earl Carroll's Broadway Theatre before becoming a legitimate theater house simply called Broadway Theatre on December 8, 1930. In 1937, known as Ciné Roma, it showed Italian films. For a short time during the 1950s it showed Cinerama films.
+
+            <br>
+            <br>
+
+          On November 18, 1928, the first Mickey Mouse cartoon released to the public, Steamboat Willie, debuted at the Colony. Producer Walt Disney returned on November 13, 1940, to debut the feature film Fantasia in Fantasound, an early stereo system.
+
+          The legitimate theater opened in 1930 with The New Yorkers by Cole Porter. Stars such as Milton Berle, Alfred Drake, José Ferrer, Eartha Kitt, Vivien Leigh, Zero Mostel, and Mae West have appeared on stage."</p>  
+
+      </div>
+
+    </div>
+    <div class="Site_6" id="third-map" class="map"></div> 
+
+    <div class="Site_8" id="fourth-map" class="map"></div>
+    <div class="Site_7">
+      
+       <div class="content_text">
+          <h1>The Brooklyn Botanical Garden</h1>
+          <h4>Coordinates: 40.77924157, -73.96356583 </h4>
+          <h4>Tourist Rating: 4/5</h4>
+
+          <p>The Garden is used for professional ice hockey and basketball, as well as boxing, concerts, ice shows, circuses, professional wrestling and other forms of sports and entertainment. It is close to other midtown Manhattan landmarks, including the Empire State Building, Koreatown, and Macy's at Herald Square. It is home to the New York Rangers of the National Hockey League (NHL), the New York Knicks of the National Basketball Association (NBA), and was home to the New York Liberty (WNBA) from 1997 to 2017. </p>
+
+      </div>
+
+    </div>
+
+    <div class="Site_9">
+      
+       <div class="content_text">
+          <h1>The Empire State Building</h1>
+          <h4>Coordinates: 40.74834612, -73.98520052 </h4>
+          <h4>Tourist Rating: 4.2/5</h4>
+
+          <p>The Empire State Building is a 102-story Art Deco skyscraper in Midtown Manhattan, New York City. It was designed by Shreve, Lamb & Harmon and completed in 1931. Its name is derived from "Empire State", the nickname of New York. The building has a roof height of 1,250 feet and stands a total of 1,454 feet tall, including its antenna. The Empire State Building stood as the world's tallest building until the construction of the World Trade Center in 1970; following the collapse of the World Trade Center in the September 11, 2001, attacks, the Empire State Building was again the city's tallest until 2012. As of 2019, the building is the seventh-tallest building in New York City, the sixth-tallest completed skyscraper in the United States, the 45th-tallest in the world, and the sixth-tallest freestanding structure in the Americas. The site of the Empire State Building, located in Midtown South on the west side of Fifth Avenue between West 33rd and 34th Streets, was originally part of an early 18th-century farm. It was developed in 1893 as the site of the Waldorf–Astoria Hotel. In 1929, Empire State Inc. acquired the site and devised plans for a skyscraper there.</p>
+
+      </div>
+
+    </div>
+    <div class="Site_10" id="fifth-map" class="map"></div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js" integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log==" crossorigin=""></script>
+    
+    <script src="mapleaflets.js"></script>
+  
+  </div>
+    
+    <div class="Footer">
+      <p>Contact Us @TourismIO on Twitter</p>
+    </div>
+</body>
+</html>
